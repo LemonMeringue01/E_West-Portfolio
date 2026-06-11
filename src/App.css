@@ -1,0 +1,138 @@
+/* index.css */
+#root{
+  width:100% !important;
+  border-inline:none;
+}
+html, body {
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #100406;
+
+}
+
+
+.inlineTexts{
+  display: inline-block;
+}
+
+#goHome{
+  display: inline-block;
+}
+
+
+
+h1{
+  color:#5CFFBE;
+  line-height: 52px;
+}
+h5{
+  color:#F4F5F6;
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#BlinkThis {
+  animation: blink 1.2s infinite;
+}
+
+.SmallScreenBar{
+
+
+}
+
+.SideBar{
+  background-color: #344634;
+  Width:30%;
+  height:100vh; /*vh is for viewheight. can't do 100% as hrml, body has no defined height. 100% of what?*/
+  float:left;
+  position: fixed;
+  padding:10px;
+  border-right: 6px solid #53825D;
+
+}
+
+#hero{
+  padding-top: 20px;
+  width:40%;
+  box-shadow: 5px 5px 5px #291A11;
+}
+
+#SidebarBorder{
+  height:100%;
+}
+
+.MainContent{
+  padding:50px;
+  margin-left:31%;
+  padding-bottom: 100px;
+}
+
+
+.linkButton{
+  background-color: #99FFD6;
+  padding:12px;
+  border-radius: 2px;
+  box-shadow: 5px 5px 5px #291A11;
+}
+a{
+  text-decoration: none;
+  color:black;
+  font-weight: 700;
+}
+
+.contactLink{
+  color:black;
+  background-color: #99FFD6;
+  padding:8px;
+  border-radius: 2px;
+  box-shadow: 5px 5px 5px #291A11;
+  margin:5px;
+}
+
+#cvView{
+  padding:10px;
+  margin-top:20px;
+}
+
+@media screen and (max-width: 950px) {
+  .SideBar{
+    display:none;
+  }
+  
+  body{
+    padding:15px;
+  }
+  .MainContent{
+
+    margin-left:0px ;
+  } 
+}
+
+@media screen and (min-width: 950px) {
+  .SmallScreenBar{
+    display:none;
+  }
+  
+  .HeroSection{
+    display: none;
+  }
+
+  .MainContent {
+    padding-left: 3%;
+    padding-right: 3%;
+  
+  } 
+}
